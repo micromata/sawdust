@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../modules/sawdust.alpha">
+      <sourceFolder url="file://$MODULE_DIR$/../../modules/sawdust.alpha/src/main/java/sawdust.alpha" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../modules/sawdust.alpha/src/test/java/sawdust.alpha" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="TEST" name="junit-5" level="project" />
+    <orderEntry type="library" name="slf4j-1.8.0" level="project" />
+  </component>
+</module>
