@@ -1,0 +1,7 @@
+!.idea/
+.idea/workspace.xml
+
+build/Bach.java
+build/Bach.jsh
+
+target/
