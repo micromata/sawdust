@@ -5,7 +5,7 @@ import java.util.List;
 class Build {
 
   public static void main(String... args) throws Exception {
-    Bach.Default.VERBOSE = false;
+    Bach.Default.VERBOSE = true;
     new Build().build();
   }
 
