@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="sawdust" default="test" basedir=".">
+    <property name="target" location="target/ant"/>
+
+    <dirset id="tests" dir=".">
+        <include name="modules/**/src/test/java"/>
+    </dirset>
+    <property name="tests" refid="tests"/>
+
+    <target name="init">
+        <mkdir dir="${target}/main"/>
+        <mkdir dir="${target}/test"/>
+    </target>
+
+    <target name="clean" description="clean up">
+        <delete dir="${target}"/>
+    </target>
+
+    <target name="compile" depends="init">
+        <javac destdir="${target}/main" modulepath="deps" modulesourcepath="modules/sawdust.alpha/src/main/java"
+               includeantruntime="false"/>
+        <javac destdir="${target}/test" modulepath="deps" modulesourcepath="${tests}" includeantruntime="false">
+            <compilerarg line="--patch-module sawdust.alpha=modules/sawdust.alpha/src/main/java/sawdust.alpha"/>
+        </javac>
+    </target>
+
+    <target name="test" depends="compile">
+        <java modulepath="${target}/test:deps" module="org.junit.platform.console" fork="true">
+            <jvmarg line="--add-modules ALL-MODULE-PATH"/>
+            <arg line="--scan-module-path"/>
+        </java>
+    </target>
+
+</project>
