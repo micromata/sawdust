@@ -1,0 +1,11 @@
+sudo: false
+
+language: java
+jdk: oraclejdk9
+
+install:
+- java --version
+
+script:
+- chmod u+x build.jsh
+- ./build.jsh
