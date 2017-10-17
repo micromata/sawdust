@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="sawdust" default="test" basedir=".">
+
+    <fail message="Ant 1.9.7+ required">
+        <condition>
+            <not>
+                <antversion atleast="1.9.7"/>
+            </not>
+        </condition>
+    </fail>
+
     <property name="target" location="target/ant"/>
 
     <dirset id="tests" dir=".">

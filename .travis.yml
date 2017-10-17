@@ -3,9 +3,11 @@ sudo: false
 language: java
 jdk: oraclejdk9
 
-install:
-- java --version
-
-script:
-- chmod u+x build.jsh
-- ./build.jsh
+jobs:
+  include:
+    - stage: jshell
+      install: chmod u+x build.jsh
+      script: ./build.jsh
+    - stage: ant
+      install: . ./scripts/install-ant.sh
+      script: ${ANT_HOME}/bin/ant
