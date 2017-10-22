@@ -4,4 +4,6 @@
 build/Bach.java
 build/Bach.jsh
 
+.gradle
+
 target/
