@@ -1,9 +1,9 @@
 //usr/bin/env jshell --show-version --execution local "$0" "$@"; exit $?
 
 /*
- * Download "Bach.java" and "Bach.jsh" from github to local "build" directory.
+ * Download "Bach.java" and "Bach.jsh" from github to local "bach" directory.
  */
-Path target = Files.createDirectories(Paths.get("build"))
+Path target = Files.createDirectories(Paths.get("bach"))
 URL context = new URL("https://raw.githubusercontent.com/sormuras/bach/master/src/bach/")
 for (Path script : Set.of(target.resolve("Bach.java"), target.resolve("Bach.jsh"))) {
     // if (Files.exists(script)) continue; // comment to overwrite existing files
@@ -15,9 +15,9 @@ for (Path script : Set.of(target.resolve("Bach.java"), target.resolve("Bach.jsh"
 /*
  * Source "Bach.java", "Bach.jsh" and "Build.java" into this jshell session.
  */
-/open build/Bach.java
-/open build/Bach.jsh
-/open build/Build.java
+/open bach/Bach.java
+/open bach/Bach.jsh
+/open bach/Build.java
 
 /*
  * Execute.

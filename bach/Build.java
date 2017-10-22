@@ -2,6 +2,15 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
+/**
+ * Build project sawdust.
+ *
+ * <p>Before mounting this directory as a source path, please execute {@code jshell build.jsh} in
+ * the root directory of this project first. This will download the required types for compiling
+ * this class.
+ *
+ * @see <a href="https://github.com/sormuras/bach#bootstrap-on-the-fly">sormuras/bach</a>
+ */
 class Build {
 
   public static void main(String... args) throws Exception {

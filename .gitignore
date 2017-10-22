@@ -1,8 +1,8 @@
 !.idea/
 .idea/workspace.xml
 
-build/Bach.java
-build/Bach.jsh
+bach/Bach.java
+bach/Bach.jsh
 
 .gradle
 
