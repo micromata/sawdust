@@ -11,3 +11,6 @@ jobs:
     - stage: ant
       install: . ./scripts/install-ant.sh
       script: ${ANT_HOME}/bin/ant
+    - stage: maven
+      install: mvn --version
+      script: mvn test
