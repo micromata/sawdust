@@ -5,11 +5,11 @@ Collection of build tools and IDEs tackling Java 9 module system and JUnit 5 tes
 
 ### JDK [JShell] (9 or higher) with [Bach]
 
-See [build.jsh] and directory [bach]
+See [build.jsh](./build.jsh) and files in [bach/](./bach/) directory
 
 ### Apache Ant (1.9.7 or higher)
 
-See [build.xml]
+See [build.xml](./build.xml) for details.
 
 ### Gradle
 
