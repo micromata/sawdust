@@ -3,22 +3,22 @@ Collection of build tools and IDEs tackling Java 9 module system and JUnit 5 tes
 
 ## Command Line Tool
 
-### JDK [JShell] (9 or higher) with [Bach]
+### JDK [JShell] 9 with [Bach]
 
 See [build.jsh](./build.jsh) and files in [bach](./bach) directory, especially [Build.java](./bach/Build.java).
 
-### Apache Ant (1.9.7 or higher)
+### Apache [Ant] 1.9.7
 
 See [build.xml](./build.xml) for details.
 
-### [Gradle]
+### [Gradle] 4.2.1
 
 See [build.gradle](./build.gradle) and [settings.gradle](./settings.gradle) for details.
 
 - https://guides.gradle.org/building-java-9-modules
 - https://blog.gradle.org/java-9-support-update
 
-### [Maven]
+### Apache [Maven] 3.5.0
 
 See [pom.xml](./pom.xml) and similar files in `modules` directory.
 
@@ -26,7 +26,7 @@ See [pom.xml](./pom.xml) and similar files in `modules` directory.
 
 ## IDE
 
-### IntelliJ IDEA
+### IntelliJ IDEA 2017.3 EAP
 
 See [sawdust.iml](sawdust.iml) and [.idea](./.idea) directory.
 
@@ -50,5 +50,6 @@ For the sake of clarity all dependencies are stored in the `deps/` directory.
 
 [Bach]: https://github.com/sormuras/bach
 [JShell]: https://docs.oracle.com/javase/9/jshell/introduction-jshell.htm#JSHEL-GUID-630F27C8-1195-4989-9F6B-2C51D46F52C8
+[Ant]: https://ant.apache.org
 [Gradle]: https://gradle.org
 [Maven]: https://maven.apache.org

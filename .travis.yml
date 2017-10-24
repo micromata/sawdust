@@ -5,15 +5,15 @@ jdk: oraclejdk9
 
 jobs:
   include:
-#    - stage: jshell
-#      install: chmod u+x build.jsh
-#      script: ./build.jsh
-#    - stage: ant
-#      install: . ./scripts/install-ant.sh
-#      script: ${ANT_HOME}/bin/ant
+    - stage: jshell
+      install: chmod u+x build.jsh
+      script: ./build.jsh
+    - stage: ant
+      install: . ./scripts/install-ant.sh
+      script: ${ANT_HOME}/bin/ant
     - stage: gradle
       install: . ./scripts/install-gradle.sh
       script: gradle --console plain build
-#    - stage: maven
-#      install: mvn --version
-#      script: mvn test
+    - stage: maven
+      install: mvn --version
+      script: mvn test
