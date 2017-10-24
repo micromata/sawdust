@@ -6,7 +6,7 @@ ARCHIVE=gradle-${VERSION}-bin.zip
 
 cd ~
 wget https://services.gradle.org/distributions/${ARCHIVE}
-unzip -d ~/gradle ${ARCHIVE}
-export GRADLE_HOME=~/gradle
+unzip ${ARCHIVE}
+export GRADLE_HOME=~/gradle-${VERSION}
 export PATH=${GRADLE_HOME}/bin:$PATH
 cd -
