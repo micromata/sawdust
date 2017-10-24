@@ -5,7 +5,7 @@ Collection of build tools and IDEs tackling Java 9 module system and JUnit 5 tes
 
 ### JDK [JShell] (9 or higher) with [Bach]
 
-See [build.jsh](./build.jsh) and files in [bach/](./bach/) directory
+See [build.jsh](./build.jsh) and files in [bach/](./bach) directory.
 
 ### Apache Ant (1.9.7 or higher)
 
@@ -17,15 +17,15 @@ See [build.xml](./build.xml) for details.
 
 ### [Maven]
 
-See [pom.xml] and similar files in directory [modules]
+See [pom.xml](./pom.xml) and similar files in `modules` directory.
 
-**TODO**: enable white-box testing and cleanup dependency configuration
+**TODO**: enable [white-box](https://github.com/micromata/sawdust/issues/7) testing and cleanup dependency configuration
 
 ## IDE
 
 ### IntelliJ IDEA
 
-See [sawdust.iml] and directory [.idea]
+See [sawdust.iml](sawdust.iml) and (.idea)[./.idea] directory.
 
 ### Eclipse
 
