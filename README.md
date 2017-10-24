@@ -1,22 +1,43 @@
 # sawdust [![build status](https://travis-ci.org/micromata/sawdust.svg?branch=master)](https://travis-ci.org/micromata/sawdust)
 Collection of build tools and IDEs tackling Java 9 module system and JUnit 5 tests.
 
-## Build tools
+## Command Line Tool
 
-- JDK [JShell] (9 or higher) with [Bach]
-- Apache Ant (1.9.7 or higher)
-- **TODO** Gradle
-- **TODO** Maven
+### JDK [JShell] (9 or higher) with [Bach]
+
+See [build.jsh] and directory [bach]
+
+### Apache Ant (1.9.7 or higher)
+
+See [build.xml]
+
+### Gradle
+
+**TODO** https://github.com/micromata/sawdust/issues/2
+
+### [Maven]
+
+See [pom.xml] and similar files in directory [modules]
+
+**TODO**: enable white-box testing and cleanup dependency configuration
 
 ## IDE
 
-- IntelliJ IDEA
-- **TODO** Eclipse
-- **TODO** Netbeans
+### IntelliJ IDEA
+
+See [sawdust.iml] and directory [.idea]
+
+### Eclipse
+
+**TODO** https://github.com/micromata/sawdust/issues/4
+
+### Netbeans
+
+**TODO** https://github.com/micromata/sawdust/issues/5
 
 ## Dependencies
 
-For the sake of clarity all dependencies are stored in the directory `deps/`.
+For the sake of clarity all dependencies are stored in the `deps/` directory.
 
 - SLF4J 1.8.0-alpha2
 - JUnit Platform 1.1.0-SNAPSHOT
@@ -26,3 +47,4 @@ For the sake of clarity all dependencies are stored in the directory `deps/`.
 
 [Bach]: https://github.com/sormuras/bach
 [JShell]: https://docs.oracle.com/javase/9/jshell/introduction-jshell.htm#JSHEL-GUID-630F27C8-1195-4989-9F6B-2C51D46F52C8
+[Maven]: https://maven.apache.org
