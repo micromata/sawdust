@@ -5,7 +5,7 @@ Collection of build tools and IDEs tackling Java 9 module system and JUnit 5 tes
 
 ### JDK [JShell] (9 or higher) with [Bach]
 
-See [build.jsh](./build.jsh) and files in [bach/](./bach) directory.
+See [build.jsh](./build.jsh) and files in [bach](./bach) directory, especially [Build.java](./bach/Build.java).
 
 ### Apache Ant (1.9.7 or higher)
 
@@ -25,7 +25,7 @@ See [pom.xml](./pom.xml) and similar files in `modules` directory.
 
 ### IntelliJ IDEA
 
-See [sawdust.iml](sawdust.iml) and (.idea)[./.idea] directory.
+See [sawdust.iml](sawdust.iml) and [.idea](./.idea) directory.
 
 ### Eclipse
 
