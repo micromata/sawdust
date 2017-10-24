@@ -11,6 +11,9 @@ jobs:
     - stage: ant
       install: . ./scripts/install-ant.sh
       script: ${ANT_HOME}/bin/ant
+    - stage: gradle
+      install: gradle --version
+      script: gradle --console plain build
     - stage: maven
       install: mvn --version
       script: mvn test

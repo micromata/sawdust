@@ -11,9 +11,12 @@ See [build.jsh](./build.jsh) and files in [bach](./bach) directory, especially [
 
 See [build.xml](./build.xml) for details.
 
-### Gradle
+### [Gradle]
 
-**TODO** https://github.com/micromata/sawdust/issues/2
+See [build.gradle](./build.gradle) and [settings.gradle](./settings.gradle) for details.
+
+- https://guides.gradle.org/building-java-9-modules
+- https://blog.gradle.org/java-9-support-update
 
 ### [Maven]
 
@@ -47,4 +50,5 @@ For the sake of clarity all dependencies are stored in the `deps/` directory.
 
 [Bach]: https://github.com/sormuras/bach
 [JShell]: https://docs.oracle.com/javase/9/jshell/introduction-jshell.htm#JSHEL-GUID-630F27C8-1195-4989-9F6B-2C51D46F52C8
+[Gradle]: https://gradle.org
 [Maven]: https://maven.apache.org

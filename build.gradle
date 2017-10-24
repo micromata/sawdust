@@ -1,0 +1,72 @@
+apply plugin: 'java'
+
+buildDir = 'target/gradle'
+
+ext.deps = file("${projectDir}/deps")
+
+ext.mains = []
+ext.tests = []
+
+subprojects { sub ->
+    println name
+
+    apply plugin: 'java'
+    buildDir = file("${parent.buildDir}/${name}")
+
+    mains.add(file("${buildDir}/classes/java/main"))
+    tests.add(file("${buildDir}/classes/java/test"))
+
+    test.enabled = false
+
+    sourceSets {
+        main {
+            java {
+                srcDirs = ['src/main/java/' + sub.name]
+            }
+            resources {
+                srcDirs = ['src/main/resources/' + sub.name]
+            }
+        }
+        test {
+            java {
+                srcDirs = ['src/test/java/' + sub.name]
+            }
+            resources {
+                srcDirs = ['src/test/resources/' + sub.name]
+            }
+        }
+    }
+
+    compileJava {
+        options.compilerArgs = [
+                '--module-path', files(mains, deps).asPath
+        ]
+        classpath = files()
+    }
+
+    compileTestJava {
+        dependsOn compileJava
+        options.compilerArgs = [
+                '--module-path', files(tests, deps).asPath,
+                '--patch-module', "${sub.name}=" + file("src/main/java/${sub.name}")
+        ]
+        classpath = files()
+    }
+}
+
+
+//
+// Execute console launcher on the module-path.
+//
+task testModules(type: Exec, dependsOn: subprojects.build) {
+    executable = 'java'
+    args = [
+            '--module-path', files(tests, deps).asPath,
+            '--add-modules', 'ALL-MODULE-PATH',
+            '--module', 'org.junit.platform.console',
+            '--scan-module-path',
+            '--reports-dir', "${buildDir}/test-results/junit-platform"
+    ]
+}
+
+check.dependsOn testModules

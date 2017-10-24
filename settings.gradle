@@ -1,0 +1,4 @@
+include 'sawdust.alpha'
+project(':sawdust.alpha').projectDir = file('modules/sawdust.alpha')
+include 'user.view'
+project(':user.view').projectDir = file('modules/user.view')
