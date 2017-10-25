@@ -5,8 +5,8 @@ Collection of build tools and IDEs tackling Java 9 module system and JUnit 5 tes
 
 Overview
 
-| Tool        | compile | white-box testing | black-box testing |
-|-------------|:-------:|------------------:|-------------------|
+| Tool        | compile | white-box testing  | black-box testing   |
+|-------------|:-------:|:------------------:|:-------------------:|
 | JShell/Bach |    ✓    |         ✓         |         ✓         |
 | Ant         |    ✓    |         ✓         |         ✓         |
 | Gradle      |    ✓    |         ✓         |         ✓         |
