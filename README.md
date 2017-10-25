@@ -3,6 +3,15 @@ Collection of build tools and IDEs tackling Java 9 module system and JUnit 5 tes
 
 ## Command Line Tool
 
+Overview
+
+| Tool        | compile | white-box testing | black-box testing |
+|-------------|:-------:|------------------:|-------------------|
+| JShell/Bach |    ✓    |         ✓         |         ✓         |
+| Ant         |    ✓    |         ✓         |         ✓         |
+| Gradle      |    ✓    |         ✓         |         ✓         |
+| Maven       |    ✓    |         ❌         |         ✓         |
+
 ### JDK [JShell] 9 with [Bach]
 
 See [build.jsh](./build.jsh) and files in [bach](./bach) directory, especially [Build.java](./bach/Build.java).
