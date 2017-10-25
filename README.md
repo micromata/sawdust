@@ -15,6 +15,7 @@ See [build.xml](./build.xml) for details.
 
 See [build.gradle](./build.gradle) and [settings.gradle](./settings.gradle) for details.
 
+Other resources coping with Gradle + Java 9 and testing
 - https://guides.gradle.org/building-java-9-modules
 - https://blog.gradle.org/java-9-support-update
 
@@ -22,7 +23,7 @@ See [build.gradle](./build.gradle) and [settings.gradle](./settings.gradle) for 
 
 See [pom.xml](./pom.xml) and similar files in `modules` directory.
 
-**TODO**: enable [white-box](https://github.com/micromata/sawdust/issues/7) testing and cleanup dependency configuration
+**TODO**: Enable [white-box](https://github.com/micromata/sawdust/issues/7) testing and cleanup dependency configuration.
 
 ## IDE
 
@@ -30,9 +31,11 @@ See [pom.xml](./pom.xml) and similar files in `modules` directory.
 
 See [sawdust.iml](sawdust.iml) and [.idea](./.idea) directory.
 
-### Eclipse
+### Eclipse Oxygen.1a (4.7.1a)
 
-**TODO** https://github.com/micromata/sawdust/issues/4
+See various `.project`, `.classpath` and `.settings` files.
+
+**TODO** Enable [testing](https://github.com/micromata/sawdust/issues/4) with JUnit 5 at all
 
 ### Netbeans
 
