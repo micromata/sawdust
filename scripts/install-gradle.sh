@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-VERSION=4.3-rc-3
+VERSION=4.3.1
 ARCHIVE=gradle-${VERSION}-bin.zip
 
 cd ~
