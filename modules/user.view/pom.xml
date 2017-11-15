@@ -69,7 +69,7 @@
                         <argument>user.view</argument>
                         <argument>--module</argument>
                         <argument>org.junit.platform.console</argument>
-                        <argument>--scan-module-path</argument>
+                        <argument>--scan-modules</argument>
                     </arguments>
                 </configuration>
             </plugin>
