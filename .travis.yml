@@ -3,17 +3,23 @@ sudo: false
 language: java
 jdk: oraclejdk9
 
-jobs:
+matrix:
   include:
-    - stage: jshell
+    - env: TOOL='JShell'
       install: chmod u+x build.jsh
       script: ./build.jsh
-    - stage: ant
+
+    - env: TOOL='Ant'
       install: . ./scripts/install-ant.sh
       script: ${ANT_HOME}/bin/ant
-    - stage: gradle
+
+    - env: TOOL='Gradle'
       install: . ./scripts/install-gradle.sh
       script: gradle --console plain build
-    - stage: maven
+
+    - env: TOOL='Maven'
       install: mvn --version
       script: mvn test
+
+  allow_failures:
+    - env: TOOL='Maven'

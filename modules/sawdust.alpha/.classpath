@@ -6,12 +6,12 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/sawdust/deps/slf4j-api-1.8.0-alpha2.jar">
+	<classpathentry kind="lib" path="/sawdust/deps/slf4j-api-1.8.0-beta1.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/sawdust/deps/slf4j-simple-1.8.0-alpha2.jar">
+	<classpathentry kind="lib" path="/sawdust/deps/slf4j-simple-1.8.0-beta1.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>

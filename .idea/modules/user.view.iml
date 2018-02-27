@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="TEST" name="junit-5" level="project" />
+    <orderEntry type="library" scope="TEST" name="junit-5.1" level="project" />
     <orderEntry type="library" scope="TEST" name="slf4j-1.8.0" level="project" />
     <orderEntry type="module" module-name="sawdust.alpha" scope="TEST" />
   </component>

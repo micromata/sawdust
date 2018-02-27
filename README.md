@@ -16,11 +16,11 @@ Overview
 
 See [build.jsh](./build.jsh) and files in [bach](./bach) directory, especially [Build.java](./bach/Build.java).
 
-### Apache [Ant] 1.9.7
+### Apache [Ant] 1.10.2
 
 See [build.xml](./build.xml) for details.
 
-### [Gradle] 4.2.1
+### [Gradle] 4.5.1
 
 See [build.gradle](./build.gradle) and [settings.gradle](./settings.gradle) for details.
 
@@ -36,7 +36,7 @@ See [pom.xml](./pom.xml) and similar files in `modules` directory.
 
 ## IDE
 
-### IntelliJ IDEA 2017.3 EAP
+### IntelliJ IDEA 2018.1 EAP
 
 See [sawdust.iml](sawdust.iml) and [.idea](./.idea) directory.
 
@@ -54,9 +54,9 @@ See various `.project`, `.classpath` and `.settings` files.
 
 For the sake of clarity all dependencies are stored in the `deps/` directory.
 
-- SLF4J 1.8.0-alpha2
-- JUnit Platform 1.1.0-SNAPSHOT
-- JUnit Jupiter 5.1.0-SNAPSHOT
+- SLF4J 1.8.0-beta1
+- JUnit Platform 1.1.0
+- JUnit Jupiter 5.1.0
 - ApiGuardian 1.0.0
 - OpenTest4J 1.0.0
 
