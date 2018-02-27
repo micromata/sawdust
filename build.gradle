@@ -64,8 +64,8 @@ task testModules(type: Exec, dependsOn: subprojects.build) {
             '--module-path', files(tests, deps).asPath,
             '--add-modules', 'ALL-MODULE-PATH',
             '--module', 'org.junit.platform.console',
-            '--scan-module-path',
-            '--reports-dir', "${buildDir}/test-results/junit-platform"
+            '--reports-dir', "${buildDir}/test-results/junit-platform",
+            '--scan-modules'
     ]
 }
 
