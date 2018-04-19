@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="sawdust" default="test" basedir=".">
 
-    <fail message="Ant 1.9.7+ required">
+    <fail message="Ant 1.10.3+ required">
         <condition>
             <not>
-                <antversion atleast="1.9.7"/>
+                <antversion atleast="1.10.3"/>
             </not>
         </condition>
     </fail>
@@ -36,7 +36,7 @@
     <target name="test" depends="compile">
         <java modulepath="${target}/test:deps" module="org.junit.platform.console" fork="true">
             <jvmarg line="--add-modules ALL-MODULE-PATH"/>
-            <arg line="--scan-module-path"/>
+            <arg line="--scan-modules"/>
         </java>
     </target>
 

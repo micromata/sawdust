@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-ANT_VERSION=1.10.2
+ANT_VERSION=1.10.3
 ANT_ARCHIVE=apache-ant-${ANT_VERSION}-bin.tar.gz
 
 cd ~
