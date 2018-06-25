@@ -18,8 +18,8 @@ matrix:
       script: gradle --console plain build
 
     - env: TOOL='Maven'
-      install: mvn --version
-      script: mvn test
+      install: . ./scripts/install-maven.sh
+      script: mvn verify
 
   allow_failures:
     - env: TOOL='Maven'
