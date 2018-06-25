@@ -1,5 +1,5 @@
 # sawdust [![build status](https://travis-ci.org/micromata/sawdust.svg?branch=master)](https://travis-ci.org/micromata/sawdust)
-Collection of build tools and IDEs tackling Java 9 module system and JUnit 5 tests.
+Collection of build tools and IDEs tackling the Java module system and JUnit 5 tests.
 
 ## Command Line Tool
 
@@ -20,7 +20,7 @@ See [build.jsh](./build.jsh) and files in [bach](./bach) directory, especially [
 
 See [build.xml](./build.xml) for details.
 
-### [Gradle] 4.5.1
+### [Gradle] 4.7
 
 See [build.gradle](./build.gradle) and [settings.gradle](./settings.gradle) for details.
 
