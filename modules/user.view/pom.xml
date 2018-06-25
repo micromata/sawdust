@@ -19,20 +19,9 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>org.apiguardian</groupId>
-            <artifactId>apiguardian-api</artifactId>
-            <version>${apiguardian.version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>${jupiter.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-console</artifactId>
-            <version>${platform.version}</version>
-            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -45,35 +34,15 @@
     <build>
         <directory>target/maven</directory>
         <sourceDirectory>src/test/java/user.view</sourceDirectory>
+
         <plugins>
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>1.6.0</version>
-                <executions>
-                    <execution>
-                        <id>launch-console</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>exec</goal>
-                        </goals>
-                    </execution>
-                </executions>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.0</version>
                 <configuration>
-                    <longModulepath>false</longModulepath>
-                    <executable>java</executable>
-                    <arguments>
-                        <argument>--module-path</argument>
-                        <modulepath/>
-                        <argument>--add-modules</argument>
-                        <argument>user.view</argument>
-                        <argument>--module</argument>
-                        <argument>org.junit.platform.console</argument>
-                        <argument>--scan-modules</argument>
-                    </arguments>
+                    <argLine>-Dmodular.tests=true -Djunit.jupiter.execution.parallel.enabled=true</argLine>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
 
