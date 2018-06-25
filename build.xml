@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="sawdust" default="test" basedir=".">
 
-    <fail message="Ant 1.10.3+ required">
+    <fail message="Ant 1.10.4+ required">
         <condition>
             <not>
-                <antversion atleast="1.10.3"/>
+                <antversion atleast="1.10.4"/>
             </not>
         </condition>
     </fail>
