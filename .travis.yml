@@ -1,7 +1,7 @@
 sudo: false
 
 language: java
-jdk: oraclejdk9
+jdk: openjdk10
 
 matrix:
   include:
