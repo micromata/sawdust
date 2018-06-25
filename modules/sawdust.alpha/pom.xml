@@ -17,6 +17,24 @@
         <directory>target/maven</directory>
         <sourceDirectory>src/main/java/sawdust.alpha</sourceDirectory>
         <testSourceDirectory>src/test/java/sawdust.alpha</testSourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <testExcludes>
+                        <testExclude>module-info.java</testExclude>
+                    </testExcludes>
+                </configuration>
+            </plugin>
+            <!--<plugin>-->
+                <!--<artifactId>maven-surefire-plugin</artifactId>-->
+                <!--<version>2.22.0</version>-->
+                <!--<configuration>-->
+                    <!--<argLine>-Djunit.jupiter.execution.parallel.enabled=true</argLine>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+        </plugins>
     </build>
 
 </project>
