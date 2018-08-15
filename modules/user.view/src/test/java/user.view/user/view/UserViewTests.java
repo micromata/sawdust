@@ -6,7 +6,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.condition.EnabledIfSystemProperty;
 import sawdust.alpha.AlphaPublic;
 
 @DisplayName("[user.view] UserViewTests")
@@ -17,7 +16,6 @@ class UserViewTests {
   }
 
   @Test
-  @EnabledIfSystemProperty(named = "modular.tests", matches = "true")
   void modular() {
     var module = UserViewTests.class.getModule();
     assertEquals("user.view", module.getName());
