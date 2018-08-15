@@ -10,7 +10,7 @@ Overview
 | JShell/Bach |    ✓    |         ✓         |         ✓         |
 | Ant         |    ✓    |         ✓         |         ✓         |
 | Gradle      |    ✓    |         ✓         |         ✓         |
-| Maven       |    ✓    |         ❌         |         ✓         |
+| Maven       |    ✓    |         ✓         |         ✓         |
 
 ### JDK [JShell] 9 with [Bach]
 
@@ -31,8 +31,6 @@ Other resources coping with Gradle + Java 9 and testing
 ### Apache [Maven] 3.5.0
 
 See [pom.xml](./pom.xml) and similar files in `modules` directory.
-
-**TODO**: Enable [white-box](https://github.com/micromata/sawdust/issues/7) testing and cleanup dependency configuration.
 
 ## IDE
 
