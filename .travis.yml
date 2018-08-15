@@ -20,6 +20,3 @@ matrix:
     - env: TOOL='Maven'
       install: . ./scripts/install-maven.sh
       script: mvn verify
-
-  allow_failures:
-    - env: TOOL='Maven'
