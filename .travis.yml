@@ -6,5 +6,5 @@ jdk: openjdk10
 matrix:
   include:
     - env: TOOL='Maven'
-      install: . ./scripts/install-maven.sh
-      script: mvn verify
+      install: true
+      script: mvn test
