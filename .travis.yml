@@ -3,6 +3,10 @@ sudo: false
 language: java
 jdk: openjdk10
 
+before_install:
+# https://github.com/travis-ci/travis-ci/issues/8408
+- unset -v _JAVA_OPTIONS
+
 matrix:
   include:
     - env: TOOL='Maven'
