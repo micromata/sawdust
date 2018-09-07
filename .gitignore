@@ -1,9 +1,3 @@
-!.idea/
-.idea/workspace.xml
-
-bach/Bach.java
-bach/Bach.jsh
-
-.gradle
-
+.idea/
+*.iml
 target/

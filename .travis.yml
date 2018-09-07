@@ -5,18 +5,6 @@ jdk: openjdk10
 
 matrix:
   include:
-    - env: TOOL='JShell'
-      install: chmod u+x build.jsh
-      script: ./build.jsh
-
-    - env: TOOL='Ant'
-      install: . ./scripts/install-ant.sh
-      script: ${ANT_HOME}/bin/ant
-
-    - env: TOOL='Gradle'
-      install: . ./scripts/install-gradle.sh
-      script: gradle --console plain build
-
     - env: TOOL='Maven'
       install: . ./scripts/install-maven.sh
       script: mvn verify
