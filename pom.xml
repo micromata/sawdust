@@ -7,11 +7,16 @@
     <groupId>de.micromata.labs</groupId>
     <artifactId>sawdust</artifactId>
     <version>2.0-SNAPSHOT</version>
-
     <packaging>pom</packaging>
+
+    <modules>
+        <module>mode-0-classic-blackbox</module>
+        <module>mode-0-classic-whitebox</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.version>3.8.0</maven.compiler.version>
         <junit.jupiter.version>5.3.0</junit.jupiter.version>
     </properties>
 
@@ -25,16 +30,42 @@
     </dependencies>
 
     <build>
-        <directory>target/maven</directory>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.0</version>
+                <version>${maven.compiler.version}</version>
                 <configuration>
                     <release>10</release>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.coveo</groupId>
+                <artifactId>fmt-maven-plugin</artifactId>
+                <version>2.5.1</version>
+            </plugin>
+            <plugin>
+                <groupId>de.sormuras</groupId>
+                <artifactId>junit-platform-maven-plugin</artifactId>
+                <version>0.0.10</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>launch-junit-platform</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.0</version>
+                <executions>
+                    <execution>
+                        <id>default-test</id>
+                        <phase>none</phase>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
