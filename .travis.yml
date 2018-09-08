@@ -7,8 +7,9 @@ before_install:
 # https://github.com/travis-ci/travis-ci/issues/8408
 - unset -v _JAVA_OPTIONS
 
-matrix:
-  include:
-    - env: TOOL='Maven'
-      install: true
-      script: mvn test
+install: true
+script: mvn test
+
+cache:
+  directories:
+  - $HOME/.m2
