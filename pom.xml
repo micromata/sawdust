@@ -12,6 +12,7 @@
     <modules>
         <module>mode-0-classic-blackbox</module>
         <module>mode-0-classic-whitebox</module>
+        <module>mode-1-modular-slanted-blackbox</module>
     </modules>
 
     <properties>
