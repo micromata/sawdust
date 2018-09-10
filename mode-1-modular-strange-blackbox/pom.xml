@@ -9,6 +9,6 @@
         <version>2.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>mode-1-modular-slanted-blackbox</artifactId>
+    <artifactId>mode-1-modular-strange-blackbox</artifactId>
 
 </project>
