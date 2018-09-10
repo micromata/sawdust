@@ -13,6 +13,7 @@
         <module>mode-0-classic-blackbox</module>
         <module>mode-0-classic-whitebox</module>
         <module>mode-1-modular-strange-blackbox</module>
+        <module>mode-2-modular-patch-runtime-whitebox</module>
         <module>mode-4-modular-blackbox</module>
     </modules>
 
