@@ -1,3 +1,3 @@
-open module strange {
+open module mono {
   requires org.junit.jupiter.api;
 }

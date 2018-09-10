@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Mode 4 - Modular Blackbox // main -> 'module foo' test -> 'module bar'")
-class BarTests {
+@DisplayName("Modular Black Box Stereo Tests // main -> 'module foo' | test -> 'module bar'")
+class ModularBlackBoxStereoTests {
 
   @Test
   void modular() {
