@@ -9,6 +9,6 @@
         <version>2.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>mode-0-classic-whitebox</artifactId>
+    <artifactId>modular-whitebox-patch-compile</artifactId>
 
 </project>

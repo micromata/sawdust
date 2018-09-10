@@ -9,6 +9,6 @@
         <version>2.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>mode-4-modular-blackbox</artifactId>
+    <artifactId>modular-blackbox-mono</artifactId>
 
 </project>

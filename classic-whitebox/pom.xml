@@ -9,6 +9,6 @@
         <version>2.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>mode-2-modular-patch-runtime-whitebox</artifactId>
+    <artifactId>classic-whitebox</artifactId>
 
 </project>

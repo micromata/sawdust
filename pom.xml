@@ -10,11 +10,12 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>mode-0-classic-blackbox</module>
-        <module>mode-0-classic-whitebox</module>
-        <module>mode-1-modular-strange-blackbox</module>
-        <module>mode-2-modular-patch-runtime-whitebox</module>
-        <module>mode-4-modular-blackbox</module>
+        <module>classic-blackbox</module>
+        <module>classic-whitebox</module>
+        <module>modular-blackbox-mono</module>
+        <module>modular-blackbox-stereo</module>
+        <module>modular-whitebox-patch-compile</module>
+        <module>modular-whitebox-patch-runtime</module>
     </modules>
 
     <properties>
