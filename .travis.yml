@@ -1,8 +1,12 @@
 language: java
 jdk: openjdk11
 
+before_install:
+# https://github.com/travis-ci/travis-ci/issues/8408
+- unset -v _JAVA_OPTIONS
+
 install: true
-script: mvn test
+script: mvn verify
 
 cache:
   directories:
