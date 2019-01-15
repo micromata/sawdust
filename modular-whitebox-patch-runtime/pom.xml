@@ -11,17 +11,4 @@
 
     <artifactId>modular-whitebox-patch-runtime</artifactId>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>de.sormuras.junit</groupId>
-                <artifactId>junit-platform-maven-plugin</artifactId>
-                <extensions>true</extensions>
-                <configuration>
-                    <executor>JAVA</executor>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>
