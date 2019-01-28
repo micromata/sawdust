@@ -1,6 +1,7 @@
 pipeline {
 	agent any
 	stages {
+		stage("Parallel") {
 		parallel {
 		stage("Hello") {
 			steps {
@@ -12,6 +13,7 @@ pipeline {
 				echo 'Bonjour Monde'
 			}
 		}
-		}	 
+		}
+		}
 	}
 }
