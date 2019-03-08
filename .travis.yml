@@ -1,9 +1,5 @@
+dist: xenial
 language: java
-jdk: openjdk11
-
-before_install:
-# https://github.com/travis-ci/travis-ci/issues/8408
-- unset -v _JAVA_OPTIONS
 
 install: true
 script: mvn verify
