@@ -12,7 +12,7 @@
     <modules>
         <module>classic-blackbox</module>
         <module>classic-whitebox</module>
-        <module>modular-blackbox-mono</module>
+        <!--<module>modular-blackbox-mono</module>-->
         <module>modular-blackbox-stereo</module>
         <module>modular-whitebox-patch-compile</module>
         <module>modular-whitebox-patch-runtime</module>
