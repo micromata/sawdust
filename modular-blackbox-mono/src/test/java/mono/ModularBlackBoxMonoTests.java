@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Modular Black Box Mono Tests // main -> _no module_ | test -> 'module mono'")
+@DisplayName("Modular Black Box Mono Tests // main -> _no sources_ | test -> 'module mono'")
 class ModularBlackBoxMonoTests {
 
   @Test
