@@ -10,12 +10,12 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>classic-blackbox</module>
-        <module>classic-whitebox</module>
-        <module>modular-blackbox-mono</module>
-        <module>modular-blackbox-stereo</module>
-        <module>modular-whitebox-patch-compile</module>
-        <module>modular-whitebox-patch-runtime</module>
+        <module>classic-extra-package</module>
+        <module>classic-same-package</module>
+        <module>modular-extra-mono</module>
+        <module>modular-extra-stereo</module>
+        <module>modular-patch-compile</module>
+        <module>modular-patch-runtime</module>
     </modules>
 
     <properties>
@@ -39,6 +39,14 @@
                 <version>3.8.1</version>
                 <configuration>
                     <release>11</release>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.1</version>
+                <configuration>
+                    <skipIfEmpty>true</skipIfEmpty>
                 </configuration>
             </plugin>
             <plugin>
