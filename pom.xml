@@ -50,6 +50,14 @@
                 </configuration>
             </plugin>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M4</version>
+                <configuration>
+                    <testFailureIgnore>true</testFailureIgnore>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>com.coveo</groupId>
                 <artifactId>fmt-maven-plugin</artifactId>
                 <version>2.8</version>
@@ -58,7 +66,16 @@
                 <groupId>de.sormuras.junit</groupId>
                 <artifactId>junit-platform-maven-plugin</artifactId>
                 <version>1.0.0-M5</version>
-                <extensions>true</extensions>
+                <extensions>false</extensions>
+                <executions>
+                    <execution>
+                        <id>Launch JUnit Platform</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>launch</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
