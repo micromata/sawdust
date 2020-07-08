@@ -1,9 +1,0 @@
-dist: xenial
-language: java
-
-install: true
-script: mvn verify
-
-cache:
-  directories:
-  - $HOME/.m2
